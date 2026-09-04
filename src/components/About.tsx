@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 import Eyebrow from "./ui/Eyebrow";
+import { mediaPath } from "@/lib/media";
 
 const COMMITMENTS = [
   {
@@ -69,7 +70,7 @@ export default function About() {
 
         <div className="relative min-h-[180px] flex-1 overflow-hidden">
           <Image
-            src="/atlas-media/atlas-photo-02-hd.png"
+            src={mediaPath("/atlas-media/atlas-photo-02-hd.png")}
             alt="Inside a recently serviced client facility"
             fill
             className="object-cover"

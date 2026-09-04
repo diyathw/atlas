@@ -3,28 +3,29 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import InViewVideo from "./InViewVideo";
+import { mediaPath } from "@/lib/media";
 
 const ITEMS = [
   {
     kind: "image" as const,
-    src: "/atlas-media/atlas-photo-03-hd.png",
+    src: mediaPath("/atlas-media/atlas-photo-03-hd.png"),
     alt: "Chairs stacked for a full floor clean at an office site",
     caption: "office floor clean",
   },
   {
     kind: "image" as const,
-    src: "/atlas-media/atlas-photo-05-hd.png",
+    src: mediaPath("/atlas-media/atlas-photo-05-hd.png"),
     alt: "A cleaned kitchen appliance detail",
     caption: "appliance detail",
   },
   {
     kind: "video" as const,
-    src: "/atlas-media/atlas-video-02.mp4",
+    src: mediaPath("/atlas-media/atlas-video-02.mp4"),
     caption: "site walkthrough",
   },
   {
     kind: "video" as const,
-    src: "/atlas-media/atlas-video-03.mp4",
+    src: mediaPath("/atlas-media/atlas-video-03.mp4"),
     caption: "crew in service",
   },
 ];

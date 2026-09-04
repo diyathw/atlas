@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { mediaPath } from "@/lib/media";
 
 export default function QualityWipe() {
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -49,7 +50,7 @@ export default function QualityWipe() {
       <div className="sticky top-[74px] flex h-[calc(100vh-74px)] items-center overflow-hidden">
         <div className="relative aspect-4/5 w-full max-w-[560px] overflow-hidden">
           <Image
-            src="/atlas-media/atlas-photo-01-hd.png"
+            src={mediaPath("/atlas-media/atlas-photo-01-hd.png")}
             alt="Before — a client site mid-service, stations wrapped and staged"
             fill
             className="object-cover"
@@ -61,7 +62,7 @@ export default function QualityWipe() {
           >
             <div className="relative h-full w-[560px] max-w-[80vw]">
               <Image
-                src="/atlas-media/atlas-photo-06.webp"
+                src={mediaPath("/atlas-media/atlas-photo-06.webp")}
                 alt="After — the same class of site, finished and detailed"
                 fill
                 className="object-cover"

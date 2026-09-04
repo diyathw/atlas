@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Button from "./ui/Button";
 import Eyebrow from "./ui/Eyebrow";
+import { mediaPath } from "@/lib/media";
 
 export default function Hero() {
   const frameRef = useRef<HTMLDivElement>(null);
@@ -64,8 +65,8 @@ export default function Hero() {
         <video
           ref={videoRef}
           className="h-full w-full object-cover"
-          src="/atlas-media/atlas-video-01.mp4"
-          poster="/atlas-media/atlas-photo-04-hd.png"
+          src={mediaPath("/atlas-media/atlas-video-01.mp4")}
+          poster={mediaPath("/atlas-media/atlas-photo-04-hd.png")}
           muted
           playsInline
           preload="auto"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { mediaPath } from "@/lib/media";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/atlas-media/atlas-photo-04.webp",
+        url: mediaPath("/atlas-media/atlas-photo-04.webp"),
         width: 1200,
         height: 900,
         alt: "Atlas crew servicing a client facility",
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/atlas-media/atlas-photo-04.webp"],
+    images: [mediaPath("/atlas-media/atlas-photo-04.webp")],
   },
 };
 
