@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@500;600;700&display=swap"><style>
+body{margin:0;background:#fff;font-family:Archivo,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#2f6f8f;text-decoration:none}a:hover{color:#12283f}
+</style></helmet>
+
+<div style="width:100%;background:#fff;color:#12283f">
+
+<div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 32px;height:74px;border-bottom:1px solid rgba(18,40,63,.1);position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);z-index:10">
+<div style="display:flex;align-items:center;gap:26px;min-width:0">
+<div style="display:flex;flex-direction:column;gap:1px;flex:none">
+<div style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:23px;letter-spacing:.22em;white-space:nowrap">ATLAS</div>
+<div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.04em;color:rgba(18,40,63,.5);white-space:nowrap">MAINTENANCE SOLUTIONS INC</div>
+</div>
+<div style="display:flex;gap:17px;font-size:13.5px;font-weight:500;flex:none">
+<a href="#services" style="color:#12283f;white-space:nowrap">Services</a>
+<a href="#quality" style="color:#12283f;white-space:nowrap">Quality</a>
+<a href="#industries" style="color:#12283f;white-space:nowrap">Industries</a>
+<a href="#about" style="color:#12283f;white-space:nowrap">About</a>
+<a href="#contact" style="color:#12283f;white-space:nowrap">Contact</a>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:18px;flex:none">
+<div style="text-align:right;flex:none"><div style="font:10px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.5);white-space:nowrap">24/7 DISPATCH</div><div style="font-size:15px;font-weight:600;white-space:nowrap">(602) 555-0148</div></div>
+<a href="#contact" style="background:#12283f;color:#fff;font-size:13.5px;font-weight:600;padding:12px 20px;border-radius:3px;white-space:nowrap;flex:none" style-hover="background:#2f6f8f">Request a walkthrough</a>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;background:#f5f4f1">
+<div style="padding:82px 48px 82px 40px;display:flex;flex-direction:column;gap:26px;align-self:center">
+<div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#2f6f8f">COMMERCIAL JANITORIAL — PHOENIX, AZ — SINCE 2004</div>
+<h1 style="margin:0;font-size:58px;line-height:1.02;letter-spacing:-.025em;font-weight:700;text-wrap:balance">Facilities that stay inspection&#8209;ready.</h1>
+<p style="margin:0;max-width:480px;font-size:17px;line-height:1.55;color:rgba(18,40,63,.72);text-wrap:pretty">Contract cleaning for offices, clinics, schools and light industrial sites across the Valley. Documented scopes, trained W&#8209;2 crews, and a supervisor who signs off on every visit.</p>
+<div style="display:flex;gap:12px;margin-top:2px;flex-wrap:wrap">
+<a href="#contact" style="background:#2f6f8f;color:#fff;font-size:14.5px;font-weight:600;padding:15px 26px;border-radius:3px" style-hover="background:#12283f">Get a scope &amp; price in 48 hrs</a>
+<a href="#quality" style="border:1px solid rgba(18,40,63,.25);color:#12283f;font-size:14.5px;font-weight:600;padding:15px 26px;border-radius:3px" style-hover="background:rgba(18,40,63,.05)">See our quality program</a>
+</div>
+<div style="display:flex;gap:22px;flex-wrap:wrap;margin-top:10px;font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">
+<span>INSURED &amp; BONDED · $5M</span><span>OSHA-TRAINED CREWS</span><span>E-VERIFY</span><span>GREEN SEAL SUPPLIES</span>
+</div>
+</div>
+<div style="min-height:560px;background:repeating-linear-gradient(135deg,#e6e3dc 0 9px,#dcd8d0 9px 18px);display:flex;align-items:flex-end;padding:18px">
+<span style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55);background:rgba(255,255,255,.75);padding:6px 9px">photo — crew burnishing lobby floor, wide</span>
+</div>
+</div>
+
+<sc-if value="{{ showStatBand }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);background:#12283f;color:#fff">
+<div style="padding:34px 40px;border-right:1px solid rgba(255,255,255,.12)"><div style="font-size:38px;font-weight:700;letter-spacing:-.02em">1,140</div><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.6);margin-top:4px">SITES SERVICED WEEKLY</div></div>
+<div style="padding:34px 40px;border-right:1px solid rgba(255,255,255,.12)"><div style="font-size:38px;font-weight:700;letter-spacing:-.02em">340</div><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.6);margin-top:4px">W-2 CREW MEMBERS</div></div>
+<div style="padding:34px 40px;border-right:1px solid rgba(255,255,255,.12)"><div style="font-size:38px;font-weight:700;letter-spacing:-.02em">98.4%</div><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.6);margin-top:4px">QA INSPECTION PASS RATE</div></div>
+<div style="padding:34px 40px"><div style="font-size:38px;font-weight:700;letter-spacing:-.02em">22 min</div><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.6);margin-top:4px">AVG. EMERGENCY RESPONSE</div></div>
+</div>
+</sc-if>
+
+<div id="services" style="padding:76px 40px 80px;scroll-margin-top:80px">
+<div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:34px;gap:40px">
+<div><div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#2f6f8f;margin-bottom:12px">01 — SERVICES</div>
+<h2 style="margin:0;font-size:37px;font-weight:700;letter-spacing:-.02em;max-width:16em;line-height:1.1">One contract, every surface in the building.</h2></div>
+<a href="#contact" style="font-size:14px;font-weight:600;flex:none">Ask about a custom scope &rarr;</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(18,40,63,.12);border:1px solid rgba(18,40,63,.12)">
+<div style="background:#fff;padding:30px 28px 34px;display:flex;flex-direction:column;gap:10px" style-hover="background:#f7f6f3"><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">S-01</div><div style="font-size:19px;font-weight:600">Nightly janitorial</div><p style="margin:0;font-size:14.5px;line-height:1.5;color:rgba(18,40,63,.65)">Task-mapped scopes by room type, logged per visit. Day porters available.</p></div>
+<div style="background:#fff;padding:30px 28px 34px;display:flex;flex-direction:column;gap:10px" style-hover="background:#f7f6f3"><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">S-02</div><div style="font-size:19px;font-weight:600">Floor &amp; carpet care</div><p style="margin:0;font-size:14.5px;line-height:1.5;color:rgba(18,40,63,.65)">Strip &amp; refinish, burnishing, hot-water extraction on a published cycle.</p></div>
+<div style="background:#fff;padding:30px 28px 34px;display:flex;flex-direction:column;gap:10px" style-hover="background:#f7f6f3"><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">S-03</div><div style="font-size:19px;font-weight:600">Disinfection</div><p style="margin:0;font-size:14.5px;line-height:1.5;color:rgba(18,40,63,.65)">EPA List N protocols for clinics, dental suites and childcare rooms.</p></div>
+<div style="background:#fff;padding:30px 28px 34px;display:flex;flex-direction:column;gap:10px" style-hover="background:#f7f6f3"><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">S-04</div><div style="font-size:19px;font-weight:600">Window &amp; glass</div><p style="margin:0;font-size:14.5px;line-height:1.5;color:rgba(18,40,63,.65)">Interior and low-rise exterior, quarterly or on request. Storefront weekly.</p></div>
+<div style="background:#fff;padding:30px 28px 34px;display:flex;flex-direction:column;gap:10px" style-hover="background:#f7f6f3"><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">S-05</div><div style="font-size:19px;font-weight:600">Warehouse &amp; industrial</div><p style="margin:0;font-size:14.5px;line-height:1.5;color:rgba(18,40,63,.65)">Ride-on scrubbing, dock and mezzanine detail, high-dusting on lifts.</p></div>
+<div style="background:#fff;padding:30px 28px 34px;display:flex;flex-direction:column;gap:10px" style-hover="background:#f7f6f3"><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">S-06</div><div style="font-size:19px;font-weight:600">Post-construction</div><p style="margin:0;font-size:14.5px;line-height:1.5;color:rgba(18,40,63,.65)">Rough, final and touch-up cleans coordinated to your punch schedule.</p></div>
+</div>
+</div>
+
+<div id="quality" style="background:#f5f4f1;padding:76px 40px;display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center;scroll-margin-top:80px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#2f6f8f">02 — QUALITY PROGRAM</div>
+<h2 style="margin:0;font-size:35px;font-weight:700;letter-spacing:-.02em;line-height:1.12">You get the inspection report, not just the invoice.</h2>
+<p style="margin:0;font-size:16px;line-height:1.55;color:rgba(18,40,63,.7);text-wrap:pretty">Every site is scored against its own scope sheet on a rotating schedule. Findings, photos and corrections land in your inbox within 24 hours — so building walkthroughs stop being a surprise.</p>
+<div style="display:flex;flex-direction:column;border-top:1px solid rgba(18,40,63,.14)">
+<div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid rgba(18,40,63,.14)"><span style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4);padding-top:3px">01</span><div><div style="font-size:15px;font-weight:600">Scope sheet per room type</div><div style="font-size:13.5px;color:rgba(18,40,63,.6)">Signed at onboarding, revised with you annually.</div></div></div>
+<div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid rgba(18,40,63,.14)"><span style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4);padding-top:3px">02</span><div><div style="font-size:15px;font-weight:600">Supervisor sign-off nightly</div><div style="font-size:13.5px;color:rgba(18,40,63,.6)">Geo-stamped, with photo evidence on flagged areas.</div></div></div>
+<div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid rgba(18,40,63,.14)"><span style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4);padding-top:3px">03</span><div><div style="font-size:15px;font-weight:600">Monthly scored inspection</div><div style="font-size:13.5px;color:rgba(18,40,63,.6)">Shared as a PDF and tracked as a trend line.</div></div></div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#e6e3dc 0 9px,#dcd8d0 9px 18px);display:flex;align-items:flex-end;padding:14px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55);background:rgba(255,255,255,.75);padding:5px 8px">before — restroom</span></div>
+<div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#dfe6ea 0 9px,#d3dde3 9px 18px);display:flex;align-items:flex-end;padding:14px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55);background:rgba(255,255,255,.75);padding:5px 8px">after — restroom</span></div>
+</div>
+</div>
+
+<div id="industries" style="padding:70px 40px 74px;scroll-margin-top:80px">
+<div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#2f6f8f;margin-bottom:26px">03 — INDUSTRIES WE HOLD CONTRACTS IN</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">Class A office</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">Medical &amp; dental</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">K–12 &amp; charter schools</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">Distribution &amp; 3PL</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">Municipal &amp; civic</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">Auto dealerships</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">Multifamily common areas</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500">Places of worship</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(18,40,63,.12);border:1px solid rgba(18,40,63,.12);margin-top:34px">
+<div style="background:#fafaf8;height:80px;display:flex;align-items:center;justify-content:center;font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">client logo</div>
+<div style="background:#fafaf8;height:80px;display:flex;align-items:center;justify-content:center;font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">client logo</div>
+<div style="background:#fafaf8;height:80px;display:flex;align-items:center;justify-content:center;font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">client logo</div>
+<div style="background:#fafaf8;height:80px;display:flex;align-items:center;justify-content:center;font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">client logo</div>
+<div style="background:#fafaf8;height:80px;display:flex;align-items:center;justify-content:center;font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.4)">client logo</div>
+</div>
+</div>
+
+<div id="about" style="background:#f5f4f1;border-top:1px solid rgba(18,40,63,.1);padding:76px 40px;display:grid;grid-template-columns:1fr 1fr;gap:56px;scroll-margin-top:80px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#2f6f8f">04 — ABOUT ATLAS</div>
+<h2 style="margin:0;font-size:35px;font-weight:700;letter-spacing:-.02em;line-height:1.12">Twenty-two years, one market, no franchising.</h2>
+<p style="margin:0;font-size:16px;line-height:1.55;color:rgba(18,40,63,.7);text-wrap:pretty">Atlas has cleaned Valley buildings since 2004. Every crew member is a W-2 employee we train, background-check and equip ourselves — no subcontracted labor, no rotating faces in your building.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px">
+<div><div style="font-size:15px;font-weight:600">Supervisor per 6 crew</div><div style="font-size:13.5px;color:rgba(18,40,63,.6);line-height:1.45">Not per region. Someone answerable is on site.</div></div>
+<div><div style="font-size:15px;font-weight:600">30-day out clause</div><div style="font-size:13.5px;color:rgba(18,40,63,.6);line-height:1.45">No auto-renew traps. We keep accounts by performing.</div></div>
+<div><div style="font-size:15px;font-weight:600">Own equipment fleet</div><div style="font-size:13.5px;color:rgba(18,40,63,.6);line-height:1.45">Ride-on scrubbers, extractors, HEPA vacs.</div></div>
+<div><div style="font-size:15px;font-weight:600">Bilingual crews</div><div style="font-size:13.5px;color:rgba(18,40,63,.6);line-height:1.45">Site instructions posted in English and Spanish.</div></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="background:#fff;border:1px solid rgba(18,40,63,.12);border-radius:5px;padding:30px 28px">
+<p style="margin:0;font-size:19px;line-height:1.45;font-weight:500;text-wrap:pretty">“We went from three complaint emails a week to none. The monthly score sheet is the reason I stopped shopping the contract.”</p>
+<div style="display:flex;align-items:center;gap:12px;margin-top:20px">
+<div style="width:38px;height:38px;border-radius:100px;background:repeating-linear-gradient(135deg,#e6e3dc 0 6px,#dcd8d0 6px 12px);flex:none"></div>
+<div><div style="font-size:14px;font-weight:600">M. Reyes-Whitfield</div><div style="font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">FACILITIES DIRECTOR · 3-BUILDING CAMPUS</div></div>
+</div>
+</div>
+<div style="flex:1;min-height:180px;background:repeating-linear-gradient(135deg,#e6e3dc 0 9px,#dcd8d0 9px 18px);display:flex;align-items:flex-end;padding:14px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55);background:rgba(255,255,255,.75);padding:5px 8px">photo — team portrait outside the shop</span></div>
+</div>
+</div>
+
+<div id="contact" style="background:#12283f;color:#fff;padding:76px 40px;display:grid;grid-template-columns:1fr 1fr;gap:64px;scroll-margin-top:80px">
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:rgba(255,255,255,.55)">05 — GET A PRICE</div>
+<h2 style="margin:0;font-size:38px;font-weight:700;letter-spacing:-.025em;line-height:1.08">Free on-site walkthrough. You keep the scope sheet either way.</h2>
+<p style="margin:0;font-size:16px;line-height:1.55;color:rgba(255,255,255,.7);max-width:34em">We measure, photograph and price your building, then send a line-item scope you can compare against anyone. Most quotes land within 48 hours of the visit.</p>
+<div style="display:flex;flex-direction:column;gap:12px;margin-top:12px;font-size:15px">
+<div style="display:flex;gap:10px"><span style="color:#6fb3d2;font-weight:700">&#10003;</span><span style="color:rgba(255,255,255,.85)">Walkthrough within 3 business days</span></div>
+<div style="display:flex;gap:10px"><span style="color:#6fb3d2;font-weight:700">&#10003;</span><span style="color:rgba(255,255,255,.85)">Certificate of insurance sent with the bid</span></div>
+<div style="display:flex;gap:10px"><span style="color:#6fb3d2;font-weight:700">&#10003;</span><span style="color:rgba(255,255,255,.85)">Emergency and after-hours response, 24/7</span></div>
+</div>
+<div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;gap:36px">
+<div><div style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.55)">CALL</div><div style="font-size:18px;font-weight:600;margin-top:3px">(602) 555-0148</div></div>
+<div><div style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.55)">EMAIL</div><div style="font-size:18px;font-weight:600;margin-top:3px">bids@atlasmaint.com</div></div>
+</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:32px 30px;display:flex;flex-direction:column;gap:18px">
+<div style="font-size:20px;font-weight:600;color:#12283f">Request a walkthrough</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">YOUR NAME</span><div style="border:1px solid rgba(18,40,63,.2);border-radius:3px;padding:12px 13px;font-size:14px;color:rgba(18,40,63,.35)">Jordan Ellery</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">COMPANY</span><div style="border:1px solid rgba(18,40,63,.2);border-radius:3px;padding:12px 13px;font-size:14px;color:rgba(18,40,63,.35)">Kierland Commons</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">EMAIL</span><div style="border:1px solid rgba(18,40,63,.2);border-radius:3px;padding:12px 13px;font-size:14px;color:rgba(18,40,63,.35)">jordan@…</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">PHONE</span><div style="border:1px solid rgba(18,40,63,.2);border-radius:3px;padding:12px 13px;font-size:14px;color:rgba(18,40,63,.35)">(480) …</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">FACILITY TYPE</span>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span style="border:1.5px solid #12283f;background:rgba(47,111,143,.08);border-radius:100px;padding:8px 15px;font-size:13px;font-weight:600;color:#12283f">Office</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:8px 15px;font-size:13px;font-weight:500;color:rgba(18,40,63,.7)">Medical</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:8px 15px;font-size:13px;font-weight:500;color:rgba(18,40,63,.7)">School</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:8px 15px;font-size:13px;font-weight:500;color:rgba(18,40,63,.7)">Warehouse</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:8px 15px;font-size:13px;font-weight:500;color:rgba(18,40,63,.7)">Retail</span>
+<span style="border:1px solid rgba(18,40,63,.2);border-radius:100px;padding:8px 15px;font-size:13px;font-weight:500;color:rgba(18,40,63,.7)">Other</span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">CLEANABLE SQUARE FEET</span><span style="font-size:14.5px;font-weight:600;color:#12283f">{{ sqftLabel }}</span></div>
+<div style="height:5px;border-radius:100px;background:rgba(18,40,63,.14);position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:38%;background:#2f6f8f;border-radius:100px"></div><div style="position:absolute;left:38%;top:-6px;width:17px;height:17px;border-radius:100px;background:#fff;border:2px solid #12283f;margin-left:-8px"></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.55)">ANYTHING WE SHOULD KNOW?</span><div style="border:1px solid rgba(18,40,63,.2);border-radius:3px;padding:12px 13px;min-height:66px;font-size:14px;line-height:1.5;color:rgba(18,40,63,.35)">Dock stays open until 9pm; two labs need badge escort…</div></div>
+<div style="background:#12283f;color:#fff;text-align:center;font-size:15px;font-weight:600;padding:15px;border-radius:3px" style-hover="background:#2f6f8f">Send request</div>
+<div style="font:10.5px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.45);text-align:center">NO OBLIGATION · WE DO NOT SELL YOUR INFORMATION</div>
+</div>
+</div>
+
+<div style="padding:34px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px;font:11px ui-monospace,Menlo,monospace;color:rgba(18,40,63,.45);border-top:1px solid rgba(18,40,63,.1);flex-wrap:wrap">
+<span>ATLAS MAINTENANCE SOLUTIONS INC · PHOENIX, AZ · © 2026</span>
+<span style="display:flex;gap:20px"><span>Careers</span><span>Safety data sheets</span><span>Privacy</span></span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showStatBand&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;sqft&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:58000,&quot;min&quot;:2000,&quot;max&quot;:150000,&quot;step&quot;:1000,&quot;unit&quot;:&quot;sq ft&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Quote form&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showStatBand: this.props.showStatBand ?? true,
+      sqftLabel: (this.props.sqft ?? 58000).toLocaleString() + " sq ft"
+    };
+  }
+}
+</script>
+</body>
+</html>

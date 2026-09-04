@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), Arial, Helvetica, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-mono: ui-monospace, Menlo, monospace;
+
+  /* Ink (near-black, header/footer/body text) */
+  --color-ink: #14170f;
+  /* Olive (dark section bands) */
+  --color-olive: #454f30;
+  --color-olive-soft: #5a6640;
+  /* Cream (light section bg) */
+  --color-cream: #f6f4ec;
+  --color-cream-soft: #efece0;
+  /* Accent yellow-lime (CTAs, highlights) */
+  --color-accent: #e3e14a;
+  --color-accent-soft: #eeed8f;
+  --color-amber: #a35a12;
+
+  --animate-reveal: reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+[data-reveal].is-visible {
+  animation: reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+.stripe-warm {
+  background-image: repeating-linear-gradient(
+    135deg,
+    #e6e3dc 0 9px,
+    #dcd8d0 9px 18px
+  );
+}
+
+.stripe-cool {
+  background-image: repeating-linear-gradient(
+    135deg,
+    #dfe6ea 0 9px,
+    #d3dde3 9px 18px
+  );
+}
