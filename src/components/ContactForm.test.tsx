@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import ContactForm from "./ContactForm";
 
@@ -74,7 +74,7 @@ describe("ContactForm", () => {
     render(<ContactForm />);
     const slider = screen.getByLabelText("Cleanable square feet");
 
-    fireEventChange(slider, "100000");
+    fireEvent.change(slider, { target: { value: "100000" } });
 
     expect(screen.getByText("100,000 sq ft")).toBeInTheDocument();
   });
@@ -100,13 +100,3 @@ describe("ContactForm", () => {
     ).toBeInTheDocument();
   });
 });
-
-function fireEventChange(element: HTMLElement, value: string) {
-  const input = element as HTMLInputElement;
-  const setter = Object.getOwnPropertyDescriptor(
-    window.HTMLInputElement.prototype,
-    "value"
-  )!.set!;
-  setter.call(input, value);
-  input.dispatchEvent(new Event("change", { bubbles: true }));
-}
