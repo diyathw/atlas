@@ -12,6 +12,7 @@ Files:
 
 - `atlas-photo-01.webp` through `atlas-photo-06.webp`: full-size profile gallery images
 - `atlas-photo-01-hd.png` through `atlas-photo-05-hd.png`: enhanced, higher-resolution versions of the five source photos below 1200 pixels wide; the original files are retained
+- `atlas-video-02.mp4`, `atlas-video-03.mp4`: real profile gallery videos, used in the Industries "Recent site work" gallery
 
 The HD versions were produced with OpenAI's built-in image editing workflow. Enhancement was limited to resolution, compression cleanup, and edge clarity while preserving the source composition. `atlas-photo-06.webp` was already 1360×1020 and was left unchanged.
 
@@ -19,13 +20,11 @@ Source host: `lh3.googleusercontent.com` (Google Business Profile media).
 
 These files are intended for use only where Atlas Maintenance Solutions Inc. has the necessary rights or permission from the original uploaders.
 
-## Video — stock footage, not real Atlas media
+## Hero video — stock footage, not real Atlas media
 
-`atlas-video-01.mp4` through `atlas-video-03.mp4` originally held real Google
-Business Profile videos (per the listing match above). As of 2026-09-04 they
-were intentionally replaced with stock footage; `-02` and `-03` were later
-dropped entirely (residential/home content, thematic mismatch with Atlas's
-B2B-only positioning). Only the hero video remains.
+`atlas-video-01.mp4` (the original real profile video used in the hero) was
+replaced on 2026-09-04 with `atlas-video-hero.mp4`, sourced from Pexels stock
+footage.
 
 - `atlas-video-hero.mp4` / `atlas-video-hero-poster.jpg` — used as the Hero
   section's scroll-scrubbed background. Re-encoded from the source below:
