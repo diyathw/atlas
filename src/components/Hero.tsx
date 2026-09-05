@@ -65,8 +65,8 @@ export default function Hero() {
         <video
           ref={videoRef}
           className="h-full w-full object-cover"
-          src={mediaPath("/atlas-media/atlas-video-01.mp4")}
-          poster={mediaPath("/atlas-media/atlas-photo-04-hd.png")}
+          src={mediaPath("/atlas-media/atlas-video-hero.mp4")}
+          poster={mediaPath("/atlas-media/atlas-video-hero-poster.jpg")}
           muted
           playsInline
           preload="auto"
@@ -106,7 +106,7 @@ export default function Hero() {
       </div>
 
       <span className="absolute right-6 bottom-4 font-mono text-[11px] text-white/50 sm:right-10">
-        crew servicing a place-of-worship main hall
+        stock footage — illustrative only
       </span>
     </section>
   );
