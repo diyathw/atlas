@@ -24,10 +24,16 @@ export default function CountUp({
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
+    let rafId = 0;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!entry.isIntersecting) return;
-        observer.disconnect();
+        cancelAnimationFrame(rafId);
+
+        if (!entry.isIntersecting) {
+          setValue(0);
+          return;
+        }
 
         if (reduceMotion) {
           setValue(to);
@@ -39,15 +45,18 @@ export default function CountUp({
           const progress = Math.min((now - start) / duration, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
           setValue(to * eased);
-          if (progress < 1) requestAnimationFrame(tick);
+          if (progress < 1) rafId = requestAnimationFrame(tick);
         };
-        requestAnimationFrame(tick);
+        rafId = requestAnimationFrame(tick);
       },
       { threshold: 0.4 }
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(rafId);
+    };
   }, [to, duration]);
 
   return (
