@@ -40,11 +40,26 @@ them at runtime, since this is a static export.
 
 ## Testing
 
-Jest is configured via `next/jest` (`jest.config.ts`) with `jest-environment-jsdom`.
+Jest is configured via `next/jest` (`jest.config.mjs`) with `jest-environment-jsdom`.
 Component tests live next to the components they test (e.g.
 `src/components/ContactForm.test.tsx`). `jest.setup.ts` polyfills
 `window.matchMedia`, which jsdom doesn't provide and several components rely
 on for `prefers-reduced-motion` checks.
+
+**Keep this config as `.mjs`, not `.ts`.** Jest needs the `ts-node` package to
+parse a TypeScript config file. It's not a project dependency, and it happened
+to resolve locally once (a global install or npm hoisting quirk) while a clean
+CI runner had nothing to fall back on and failed immediately with no useful
+error until the actual step log was inspected. `.mjs` needs no extra
+dependency and is fully supported by `next/jest`. Verified in an actual clean
+Node 20 container matching the CI runner before this became the fix — if a
+similar "works locally, fails in CI" issue recurs, reproduce it the same way
+(`docker run --rm -v $(pwd):/app -w /app node:20-bullseye npm ci && npm test`)
+rather than guessing from local behavior. **Caution:** that command bind-mounts
+the project directory and runs `npm ci` inside Linux, which will overwrite any
+native binaries in `node_modules` with Linux versions — run `rm -rf node_modules
+.next && npm install` on the host afterward to restore them before building
+locally again.
 
 ## Deployment
 
