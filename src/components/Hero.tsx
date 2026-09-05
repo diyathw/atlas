@@ -21,6 +21,14 @@ export default function Hero() {
     ).matches;
     if (reduceMotion) return;
 
+    // iOS Safari won't reliably honor a bare `video.currentTime = ...` write
+    // unless the element has actually been played at least once. Since this
+    // video never autoplays (it's scroll-scrubbed only), unlock it with a
+    // silent play-then-pause before the scroll handler ever touches it.
+    video.muted = true;
+    video.play()?.catch(() => {});
+    video.pause();
+
     let duration = 0;
     const onLoadedMetadata = () => {
       duration = video.duration || 0;
@@ -41,7 +49,7 @@ export default function Hero() {
           (rect.top / window.innerHeight) * -40
         }px) scale(1.08)`;
 
-        if (duration > 0) {
+        if (duration > 0 && video.readyState >= 2) {
           video.currentTime = scrollProgress * duration;
         }
       });
