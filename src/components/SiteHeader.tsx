@@ -53,7 +53,7 @@ export default function SiteHeader() {
           </div>
           <Button
             href="#contact"
-            className="hidden !px-6 !py-3 !text-[13.5px] lg:!inline-block"
+            className="!hidden !px-6 !py-3 !text-[13.5px] lg:!inline-block"
           >
             Request a walkthrough
           </Button>
